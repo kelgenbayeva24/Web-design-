@@ -1,0 +1,372 @@
+body {
+  background-image: url("home_page_background.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+.logo p{
+    color: black;
+    font-family: cursive;
+    font-size: 29px;
+    text-align: center;
+}
+/**Intro*/
+section h1 {
+    color: black;
+    font-family: cursive;
+    font-size: 48px;
+    text-align:center;
+}
+section h2 {
+    color: black;
+    font-family: cursive;
+    font-size: 38px;
+    text-align:center;
+    line-height: 1.5px;
+}
+body {
+  background-color: #f1f1f1;
+  padding: 5px;
+  font-family: Arial;
+}
+/*__________________________________________________________________________Home________________________________________________________________________*/
+
+/*_____________________________________________________________________*Novigation Bar__________________________________________________________________*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  /*padding: 14px 16px;*/
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #F0FFFF;
+}
+/*
+.description p {
+    text-align:center;
+    font-size: 30px;
+    border: 20px solid rgba(0,0,0,0.3);
+}*/
+/*_____________________________________________________________Reservation button on home page__________________________________________________________________*/
+.reservation  {
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+.reservation a {
+    text-decoration: none;
+    color: black;
+}
+.reservation a:hover {
+  background-color: #F0FFFF;
+}
+
+/*_____________________________________________________________________Blog on home page_______________________________________________________________________*/
+
+* {
+  box-sizing: border-box;
+}
+/* Center website */
+/*.main {
+  max-width: 1000px;
+  margin: auto;
+} */
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+.row {
+  margin: 8px -16px;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Content of blog*/
+.content {
+  background-color: white;
+  padding: 10px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/*__________________________________________________________________________About us________________________________________________________________________*/
+.about_info article {
+    text-align:center;
+    font-size: 21px;
+   /* background-color: #F0FFFF;*/
+}
+.about_info h2{
+    text-align:center;
+    background-color: #F0FFFF;
+}
+
+
+.flex_container {
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  
+}
+
+@media only screen and (min-width: 500px) {
+  .flex_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .flex_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* card */
+
+.card {
+  min-height: 100%;
+  background: transparent;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.card figure {
+  padding-bottom: 10%;
+  background-size: cover;
+  background-position: center center;
+  text-align:center;
+}
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card h2 {
+    font-size: 22px;
+}
+.card p {
+    font-size: 19px;
+}
+
+
+/*__________________________________________________________________________Contacts________________________________________________________________________*/
+
+
+/*_____________________________________________________________________Contacts reservation_________________________________________________________________*/
+/* {box-sizing: border-box} */
+
+/* Full-width input fields */
+input[type=text] {
+  width: 27%;
+  padding: 15px;
+  margin: 0px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.container_label label {
+    text-align: center;
+}
+
+/* Set a style for button */
+.clearfix button {
+  border: none;
+  background-color: #F0FFFF;
+  color: black;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+  opacity: 0.6;
+}
+button:hover {
+  opacity:16;
+}
+/* Add padding to container elements */
+.container {
+  padding: 1px;
+}
+.container h1{
+    font-size: 23px;
+    text-align:center;
+
+}
+.container h2{
+    text-align:center;
+    font-size: 21px;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.contact_details h1 {
+    text-align:center;
+    font-size: 25px;
+}
+.contact_details p{
+    text-align:center;
+    font-size: 22px;
+}
+/*
+.contact_details a {
+    color: black;
+}*/
+.contact_details aside {
+    text-align:center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*__________________________________________________________________________Services________________________________________________________________________*/
+
+.container_grid {
+  display: grid;
+  grid-column-gap: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  background-color: transparent;
+  padding: 9px;
+  align-items: center;
+  justify-content: center;
+}
+/*
+.grid_item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+*/
+.grid_item img {
+    border-radius: 50%;
+}
+
+
+
+
+/*__________________________________________________________________________Prices________________________________________________________________________*/
+
+
+.columns1 {
+  float: left;
+  width: 33.3%;
+  padding: 18px;
+}
+
+.price {
+  list-style-type: none;
+  border: 5px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 19px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 35px;
+}
+
+.price p {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.price .voucher {
+  background-color: #eee;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns1 {
+    width: 100%;
+  }
+}
+
+.footer {
+      background-color: #f1f1f1;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: black;
+      text-align: center;
+      padding:3px;
+}
+
+
+
+
+   
